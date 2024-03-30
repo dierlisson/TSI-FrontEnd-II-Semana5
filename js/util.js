@@ -3,6 +3,7 @@ function addNewTask() {
     console.log(newTask);
     if (newTask.length > 0) {
         var li = document.createElement("li");
+        li.value = true;
         var deleteButton = document.createElement("button");
         var finishButton = document.createElement("button");
         deleteButton.textContent = "Excluir";
