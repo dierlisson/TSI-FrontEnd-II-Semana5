@@ -18,7 +18,7 @@ Adicione um arquivo JavaScript e vincule-o ao seu HTML.
 #### No arquivo JavaScript, crie uma função para adicionar uma nova tarefa à lista quando o botão "Adicionar Tarefa" for clicado. Esta função deve:
 
 Pegar o valor do campo de entrada.
-Criar um novo elemento de lista (<li>) com o valor da tarefa.
+Criar um novo elemento de lista (< li >) com o valor da tarefa.
 Adicionar a nova tarefa à área de exibição da lista.
 Crie uma função para marcar uma tarefa como concluída quando o usuário clicar na tarefa. Esta função deve:
 
