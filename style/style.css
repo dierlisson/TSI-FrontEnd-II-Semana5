@@ -1,59 +1,148 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.container {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     background-color: #00000013;
-    gap: 20px;
 }
 
-.newTask, .listTask{
-    width: 40vw;
-    height: 80vh;
-    background-color: #33464746;
-    border-radius: 20px;
+.container {
+    width: 100%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    /* flex-wrap: nowrap; */
-}
-.newTask > p, .listTask > p{
-    color: white;
-    font-size: 40px;
-    margin-bottom: 10px;
+    gap: 20px;
 }
 
-ul{
-    padding: auto;
+.newTask,
+.list {
+    background-color: #33464746;
+    border-radius: 20px;
+    display: flex;
+
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
 }
-li{
+
+.newTask {
+    width: 80vw;
+    min-width: 300px;
+    height: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    width: 80vw;
+    min-width: 300px;
+    height: 60vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.newTask>p,
+.list>p {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    background-color: #33464746;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+input:hover {
+    background-color: #35afb67d;
+    transform: scale(1.03);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    gap: 10px;
+}
+
+li {
     padding: 5px;
     margin: 10px;
-    background-color: #33464746;
+    background-color: #eff3f3a8;
     border-radius: 20px;
-    color: white;
-    font-size: 15px;
+    color: #050505c2;
+    font-size: 20px;
     cursor: pointer;
+    gap: 10px;
+    transition: background-color 0.4s ease-in-out;
 }
-button{
-    /* width: 100px; */
-    height: 40px;
-    gap: 20px;
+
+#taskList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li:hover {
+    background-color: #eff3f3;
+}
+
+button {
+    width: 125px;
+    height: 30px;
+    gap: 10px;
+    margin-left: 5px;
     border-radius: 20px;
     background-color: #33464746;
-    color: white;
-    font-size: 15px;
+    color: #ffffff;
+    font-size: 16px;
     cursor: pointer;
     border: none;
     outline: none;
 }
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #35afb67d;
+    transform: scale(1.05);
+}
+
+/*
+button ion-icon {
+    font-size: 30px;
+}
+
+.ion-checkmark-circled {
+color: green;
+}
+
+.ion-close-circled {
+    color: red;
+}
+
+.ion-checkmark-circled:active,
+.ion-close-circled:active {
+    transform: scale(1.2);
+} */

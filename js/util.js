@@ -8,7 +8,7 @@ function addNewTask() {
         var finishButton = document.createElement("button");
         deleteButton.textContent = "Excluir";
         deleteButton.onclick = deleteTask;
-        finishButton.textContent = "Finalizada/Ativa";
+        finishButton.textContent = "Finalizada";
         finishButton.onclick = markAsActiveDesactivated;
         li.appendChild(document.createTextNode(newTask));
         li.appendChild(deleteButton);
@@ -34,6 +34,7 @@ function markAsActiveDesactivated() {
         return li.value = true;
     }
 }
+
 /*
 function markAsFinished() {
     var li = this.parentNode;
@@ -58,11 +59,12 @@ var deleteButtons = document.getElementsByClassName("delete");
 for (var i = 0; i < deleteButtons.length; i++) {
     deleteButtons[i].onclick = deleteTask;
 }
-*/
 
-// document.getElementById("newTask").onkeydown = function(event) {
-//     if (event.keyCode === 13) {
-//         event.preventDefault();
-//         addNewTask();
-//     }
-// };
+
+document.getElementById("newTask").onkeydown = function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        addNewTask();
+    }
+};
+*/
