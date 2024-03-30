@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas Interariva</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <div class="container">
-        <div> nova tarefa + botão add nova tarefa</div>
-        <div>lista interativa
-            <!-- <ul>
-            @foreach ($tarefas as $tarefa)
-                <li>{{ $tarefa }}</li>
-            @endforeach
-        </ul> -->
+        <div class="newTask">
+            <form onsubmit="addNewTask(); return false;">
+                <input type="text" id="newTask" placeholder="Nova tarefa">
+                <input type="submit" value="Adicionar">
+            </form>
         </div>
-
+        <div class="listTask">
+            <ul id="taskList">
+            </ul>
+        </div>
     </div>
-
-    <script type="text/javascript" src="util.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
 
 </body>
 
