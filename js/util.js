@@ -6,13 +6,16 @@ function addNewTask() {
         li.value = true;
         var deleteButton = document.createElement("button");
         var finishButton = document.createElement("button");
+        // var checkBox = document.createElement("input");
+        // checkBox.type = "checkbox";
         deleteButton.textContent = "Excluir";
         deleteButton.onclick = deleteTask;
-        finishButton.textContent = "Finalizada";
+        finishButton.textContent = "Concluída";
         finishButton.onclick = markAsActiveDesactivated;
         li.appendChild(document.createTextNode(newTask));
         li.appendChild(deleteButton);
         li.appendChild(finishButton);
+        // li.appendChild(checkBox);
         document.getElementById("taskList").appendChild(li);
         document.getElementById("newTask").value = "";
     }

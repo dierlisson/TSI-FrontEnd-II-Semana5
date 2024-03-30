@@ -89,7 +89,7 @@ li {
     margin: 10px;
     background-color: #eff3f3a8;
     border-radius: 20px;
-    color: #050505c2;
+    color: black;
     font-size: 20px;
     cursor: pointer;
     gap: 10px;
@@ -125,7 +125,7 @@ button:focus {
 }
 
 button:hover {
-    background-color: #35afb67d;
+    background-color: #35b0b6a6;
     transform: scale(1.05);
 }
 
